@@ -1,0 +1,6 @@
+/Users/dimaponomarcuk/Projects/OOP_Course_Work/OOP_Course_Work/bin/Debug/OOP_Course_Work.exe
+/Users/dimaponomarcuk/Projects/OOP_Course_Work/OOP_Course_Work/bin/Debug/OOP_Course_Work.pdb
+/Users/dimaponomarcuk/Projects/OOP_Course_Work/OOP_Course_Work/obj/x86/Debug/OOP_Course_Work.csprojResolveAssemblyReference.cache
+/Users/dimaponomarcuk/Projects/OOP_Course_Work/OOP_Course_Work/obj/x86/Debug/OOP_Course_Work.csproj.CoreCompileInputs.cache
+/Users/dimaponomarcuk/Projects/OOP_Course_Work/OOP_Course_Work/obj/x86/Debug/OOP_Course_Work.exe
+/Users/dimaponomarcuk/Projects/OOP_Course_Work/OOP_Course_Work/obj/x86/Debug/OOP_Course_Work.pdb

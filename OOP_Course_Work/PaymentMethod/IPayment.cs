@@ -1,0 +1,1 @@
+﻿using System; using OOP_Course_Work;  namespace OOP_Course_Work.PaymentMethod {     interface IPayment     {         bool PayForOrder(Client client, int sum);     } } 

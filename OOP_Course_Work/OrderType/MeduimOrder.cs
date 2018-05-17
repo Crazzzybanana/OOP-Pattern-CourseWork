@@ -1,0 +1,1 @@
+﻿using System;  namespace OOP_Course_Work.OrderType {     class MeduimOrder : IOrderType     {         public int GetOrderSum(float weight, int deliveryCost)         {             return (int)(weight * 7 + deliveryCost);         }     } } 

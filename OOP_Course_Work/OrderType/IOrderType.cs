@@ -1,0 +1,1 @@
+﻿using System; using OOP_Course_Work.DeliveryType;  namespace OOP_Course_Work.OrderType {     interface IOrderType     {         int GetOrderSum(float weight, int deliveryCost);     } } 

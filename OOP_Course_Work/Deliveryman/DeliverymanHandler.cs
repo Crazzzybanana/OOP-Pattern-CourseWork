@@ -1,0 +1,1 @@
+﻿using System; namespace OOP_Course_Work.Deliveryman {     abstract class DeliverymanHandler     {         public DeliverymanHandler Successor { get; set; }         public abstract void Handle(Receiver receiver);     } } 

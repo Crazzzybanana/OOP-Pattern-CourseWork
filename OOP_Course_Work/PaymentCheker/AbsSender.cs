@@ -1,0 +1,1 @@
+﻿using System; using OOP_Course_Work.DeliveryType;  namespace OOP_Course_Work.PaymentCheker {     abstract class AbsSender     {         public abstract void SendOrder(Client client, float weight, int amount, IDeliveryType delivery);     } } 

@@ -1,0 +1,1 @@
+﻿using System; namespace OOP_Course_Work.DeliveryType {     interface IDeliveryType     {         int CalculateDeliveryValue(float weight, int amount);     } } 

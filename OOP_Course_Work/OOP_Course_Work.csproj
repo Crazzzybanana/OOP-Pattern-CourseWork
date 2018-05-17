@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0A6CAE4F-3CD9-4891-82D6-6E9EE1539066}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OOP_Course_Work</RootNamespace>
+    <AssemblyName>OOP_Course_Work</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="UsualClient.cs" />
+    <Compile Include="Deliveryman\DeliverymanHandler.cs" />
+    <Compile Include="Deliveryman\Receiver.cs" />
+    <Compile Include="Deliveryman\KanneHandler.cs" />
+    <Compile Include="Deliveryman\LucasHandler.cs" />
+    <Compile Include="Deliveryman\SteveHandler.cs" />
+    <Compile Include="DeliveryType\IDeliveryType.cs" />
+    <Compile Include="DeliveryType\DeliveryContext.cs" />
+    <Compile Include="DeliveryType\FastDelivery.cs" />
+    <Compile Include="DeliveryType\UsualDelivery.cs" />
+    <Compile Include="DeliveryType\Pickup.cs" />
+    <Compile Include="OrderType\IOrderType.cs" />
+    <Compile Include="OrderType\OrderSelector.cs" />
+    <Compile Include="OrderType\LargeOrder.cs" />
+    <Compile Include="OrderType\MeduimOrder.cs" />
+    <Compile Include="OrderType\SmallOrder.cs" />
+    <Compile Include="PaymentCheker\AbsSender.cs" />
+    <Compile Include="PaymentCheker\Sender.cs" />
+    <Compile Include="PaymentCheker\SenderCheck.cs" />
+    <Compile Include="PaymentMethod\IPayment.cs" />
+    <Compile Include="PaymentMethod\CardPayment.cs" />
+    <Compile Include="PaymentMethod\CashPayment.cs" />
+    <Compile Include="PhoneDispatch\Order.cs" />
+    <Compile Include="PhoneDispatch\OrderState.cs" />
+    <Compile Include="PhoneDispatch\DeliveredToClientState.cs" />
+    <Compile Include="PhoneDispatch\ExpectingState.cs" />
+    <Compile Include="PhoneDispatch\DeliveredToStockState.cs" />
+    <Compile Include="PhoneDispatch\InTransitState.cs" />
+    <Compile Include="PhoneDispatch\DeliveredToCountryState.cs" />
+    <Compile Include="SupportService\AbstractChatroom.cs" />
+    <Compile Include="SupportService\Colleague.cs" />
+    <Compile Include="SupportService\ClientColleague.cs" />
+    <Compile Include="SupportService\SuportColleague.cs" />
+    <Compile Include="SupportService\Chatroom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Deliveryman\" />
+    <Folder Include="DeliveryType\" />
+    <Folder Include="OrderType\" />
+    <Folder Include="PaymentCheker\" />
+    <Folder Include="PaymentMethod\" />
+    <Folder Include="PhoneDispatch\" />
+    <Folder Include="SupportService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

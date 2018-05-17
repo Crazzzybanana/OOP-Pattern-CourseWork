@@ -1,0 +1,1 @@
+﻿using System; namespace OOP_Course_Work.DeliveryType {     class UsualDelivery : IDeliveryType     {         public int CalculateDeliveryValue(float weight, int amount)         {             return (int)((amount / weight) * 2);         }     } }
